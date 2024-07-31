@@ -21,12 +21,15 @@ pipenv install llama_index.vector_stores.chroma
 
 
 #Installing specific dependencies for dag-chain.py
+
     pipenv install llama-index-postprocessor-cohere-rerank > /dev/null
 
 #Installing specific dependencies for dataframe-pipeline.ipynb
+
     !pip install llama-index llama-index-experimental
 
 #Installing streamlit library for chatbot UI in code-checker.py
+
     !pip install streamlit
 
 # Setting up environment varaiable containng API private keys
@@ -42,6 +45,7 @@ pipenv install llama_index.vector_stores.chroma
         MISTRAL_AP_KEY =
 
 # Creating a VS Code runner
+
     > Self executable with dynamic variables
 
     - Creating a run configuration that loads the environment variables
