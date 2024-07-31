@@ -1,5 +1,11 @@
 # LlamaIndex-Agent-Applications
 
+## Description:
+
+## Features:
+
+## Setting Up Project Locally
+
 
     pip install pipenv
     pipenv shell
@@ -51,3 +57,5 @@
     - Create launch.json
     - Update and add env file variables
     - Create code to display the env variable of the OpemAI API Key
+
+## Usage:
