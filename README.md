@@ -21,43 +21,58 @@ It is a framework for building context-augmented LLM Applications. It provides t
 
 1. Structured Data Extraction
 
-        Pydantic Extractors: Extract structured data from unstructured sources like PDFs and websites using LLMs. Essential for automating workflows by filling in missing pieces in a type-safe way.
+> Pydantic Extractors: Extract structured data from unstructured sources like PDFs and websites using LLMs. Essential for automating workflows by filling in missing pieces in a type-safe way.
    
 2. Query Engines
 
-        End-to-End Pipelines: Handle natural language queries and return responses with reference context retrieved and passed to the LLM.
+> End-to-End Pipelines: Handle natural language queries and return responses with reference context retrieved and passed to the LLM.
    
 3. Chat Engines
 
-        Conversational Pipelines: Facilitate multiple back-and-forth interactions with your data instead of a single question-and-answer.
+> Conversational Pipelines: Facilitate multiple back-and-forth interactions with your data instead of a single question-and-answer.
 
 4. Agents
 
-    Automated Decision-Makers: Use LLMs to interact with the world via a set of tools, dynamically deciding the best course of action to complete tasks.
+> Automated Decision-Makers: Use LLMs to interact with the world via a set of tools, dynamically deciding the best course of action to complete tasks.
 
 ### Retrieval-Augmented Generation (RAG)
    
 Integrate your data with LLMs to enhance their capabilities. Crucial for chatbots, agents, and any data-driven LLM application.
 
 > Loading: Import data from various sources like text files, PDFs, websites, databases, or APIs.
+
 > Indexing: Create vector embeddings and other metadata for efficient data querying.
+
 > Storing: Save indexed data and metadata to avoid re-indexing.
+
 > Querying: Utilize various strategies for efficient and relevant data retrieval.
+
 > Evaluation: Assess the pipeline’s effectiveness, accuracy, and speed.
 
 Key Stages:
 
 Loading: Import data from various sources like text files, PDFs, websites, databases, or APIs.
+
 Indexing: Create vector embeddings and other metadata for efficient data querying.
+
 Storing: Save indexed data and metadata to avoid re-indexing.
+
 Querying: Utilize various strategies for efficient and relevant data retrieval.
+
 Evaluation: Assess the pipeline’s effectiveness, accuracy, and speed.
-Important Concepts
+
+### Important Concepts
+
 Nodes and Documents: Nodes represent chunks of data with metadata, while Documents are containers for data sources.
+
 Connectors: Ingest data from various sources into Documents and Nodes.
+
 Indexes: Store vector embeddings and metadata for efficient data retrieval.
+
 Embeddings: Numerical representations of data used to filter for relevance.
+
 Retrievers and Routers: Define and manage strategies for retrieving relevant context.
+
 Node Postprocessors and Response Synthesizers: Transform retrieved nodes and generate responses from LLMs.
 
 
