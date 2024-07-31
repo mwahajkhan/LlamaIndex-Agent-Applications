@@ -1,15 +1,13 @@
 # LlamaIndex-Agent-Applications
 
 
+    pip install pipenv
+    pipenv shell
+    pipenv install llama-index-llms-gemini google-generativeai llama-index-embeddings-gemini 
 
-pip install pipenv
-
-pipenv shell
-pipenv install llama-index-llms-gemini google-generativeai llama-index-embeddings-gemini 
-
-pipenv install chromadb
-pipenv install llama_index.vector_stores.chroma
-
+    pipenv install chromadb
+    pipenv install llama_index.vector_stores.chroma
+    
 - Check pipfile.lock
 - create new .py and select the env
 
