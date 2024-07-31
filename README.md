@@ -13,20 +13,21 @@ pipenv install llama_index.vector_stores.chroma
 - Check pipfile.lock
 - create new .py and select the env
 
-#For SQL functionallities
-pipenv install llama-index pymysql -q
-pipenv install ipython
-pipenv install llama-index-embeddings-openai
+#For SQL functionalities
+
+    pipenv install llama-index pymysql -q
+    pipenv install ipython
+    pipenv install llama-index-embeddings-openai
 
 
 #Installing specific dependencies for dag-chain.py
-pipenv install llama-index-postprocessor-cohere-rerank > /dev/null
+    pipenv install llama-index-postprocessor-cohere-rerank > /dev/null
 
 #Installing specific dependencies for dataframe-pipeline.ipynb
-!pip install llama-index llama-index-experimental
+    !pip install llama-index llama-index-experimental
 
 #Installing streamlit library for chatbot UI in code-checker.py
-!pip install streamlit
+    !pip install streamlit
 
 # Setting up environment varaiable containng API private keys
 
