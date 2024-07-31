@@ -39,7 +39,7 @@ It is a framework for building context-augmented LLM Applications. It provides t
    
 Integrate your data with LLMs to enhance their capabilities. Crucial for chatbots, agents, and any data-driven LLM application.
 
-#![ScreenShot](/basic_rag.png)
+![ScreenShot](/basic_rag.png)
 
 > Loading: Import data from various sources like text files, PDFs, websites, databases, or APIs.
 
@@ -51,31 +51,31 @@ Integrate your data with LLMs to enhance their capabilities. Crucial for chatbot
 
 > Evaluation: Assess the pipeline’s effectiveness, accuracy, and speed.
 
-Key Stages:
+### Key Stages:
 
-Loading: Import data from various sources like text files, PDFs, websites, databases, or APIs.
+- Loading: Import data from various sources like text files, PDFs, websites, databases, or APIs.
 
-Indexing: Create vector embeddings and other metadata for efficient data querying.
+- Indexing: Create vector embeddings and other metadata for efficient data querying.
 
-Storing: Save indexed data and metadata to avoid re-indexing.
+- Storing: Save indexed data and metadata to avoid re-indexing.
 
-Querying: Utilize various strategies for efficient and relevant data retrieval.
+- Querying: Utilize various strategies for efficient and relevant data retrieval.
 
-Evaluation: Assess the pipeline’s effectiveness, accuracy, and speed.
+- Evaluation: Assess the pipeline’s effectiveness, accuracy, and speed.
 
 ### Important Concepts
 
-Nodes and Documents: Nodes represent chunks of data with metadata, while Documents are containers for data sources.
+- Nodes and Documents: Nodes represent chunks of data with metadata, while Documents are containers for data sources.
 
-Connectors: Ingest data from various sources into Documents and Nodes.
+- Connectors: Ingest data from various sources into Documents and Nodes.
 
-Indexes: Store vector embeddings and metadata for efficient data retrieval.
+- Indexes: Store vector embeddings and metadata for efficient data retrieval.
 
-Embeddings: Numerical representations of data used to filter for relevance.
+- Embeddings: Numerical representations of data used to filter for relevance.
 
-Retrievers and Routers: Define and manage strategies for retrieving relevant context.
+- Retrievers and Routers: Define and manage strategies for retrieving relevant context.
 
-Node Postprocessors and Response Synthesizers: Transform retrieved nodes and generate responses from LLMs.
+- Node Postprocessors and Response Synthesizers: Transform retrieved nodes and generate responses from LLMs.
 
 
 ## Features:
