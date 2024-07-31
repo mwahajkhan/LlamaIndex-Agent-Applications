@@ -51,19 +51,14 @@ It is an automated *reasoning* and *decision* engine. It can take a user input/q
 
 ### Retrieval-Augmented Generation (RAG)
    
-Integrate your data with LLMs to enhance their capabilities. Crucial for chatbots, agents, and any data-driven LLM application.
+Integrate your data with LLMs to enhance their capabilities. Crucial for chatbots, agents, and any data-driven LLM application. RAG techniques combine the enterprise's data with Natural Language Processing capabilities of LLMs which include:
+
+ - Recommendation   - Decisioning  - Query Responses   - Content Generation   - Summarization
+
+- RAG architecture, combined with agents, and LLM generative model provides roobust and scalable applications across different industries.
 
 ![ScreenShot](/basic_rag.png)
 
-> Loading: Import data from various sources like text files, PDFs, websites, databases, or APIs.
-
-> Indexing: Create vector embeddings and other metadata for efficient data querying.
-
-> Storing: Save indexed data and metadata to avoid re-indexing.
-
-> Querying: Utilize various strategies for efficient and relevant data retrieval.
-
-> Evaluation: Assess the pipeline’s effectiveness, accuracy, and speed.
 
 
 ### LlamaIndex Framework:
