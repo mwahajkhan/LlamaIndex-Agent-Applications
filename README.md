@@ -85,14 +85,16 @@ Integrate your data with LLMs to enhance their capabilities. Crucial for chatbot
   - Indexes store data in Node objects, (which represent chunks of the original documents), and expose a retriever interface that supports additional configuration, and automation.
 
   - The commonly used vector indexes are VectorStoreIndex, Pinecone, FAISS etc.
+  -  For efficient semantic operations, the documents are broken into smaller chunks, or node objects. And we also store each document along with metadata of the document. For that the LlamaIndex offers *Spliiters* to chunk the documents.
 
-* Embeddings:
+* Query Engines:
 
-  - Numerical representations of data used to filter for relevance.
-
-- Retrievers and Routers: Define and manage strategies for retrieving relevant context.
-
-- Node Postprocessors and Response Synthesizers: Transform retrieved nodes and generate responses from LLMs.
+  - Its is a generic interface that allows us to ask question over the data. It takes Natural-Language query and returns a rich response built on one or many indexes via retrievers.
+ 
+  - We combined multiple query engines to achieve more advanced capability.
+ 
+  - Query engines provide various post-processing capabilities such as *Response synthesizer, or Node Post processors*.
+ 
 
 
 
