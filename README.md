@@ -23,9 +23,11 @@ It is an automated *reasoning* and *decision* engine. It can take a user input/q
 
 * Use Case Applications:
 
-  > #Agentic RAG#
-
-    - 
+   - **Agentic RAG**
+   - **SQL Agent**
+   - **Pandas DataFrame Agent**
+   - **Workflow Assistant**
+   - **Coding Assitant**
 
 
 ## Methods Implemented
