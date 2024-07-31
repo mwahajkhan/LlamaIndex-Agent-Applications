@@ -1,7 +1,7 @@
 # LlamaIndex-Agent-Applications
 
 
-#![ScreenShot](/pipeline.png)
+
 
 ## Description:
 
@@ -38,6 +38,8 @@ It is a framework for building context-augmented LLM Applications. It provides t
 ### Retrieval-Augmented Generation (RAG)
    
 Integrate your data with LLMs to enhance their capabilities. Crucial for chatbots, agents, and any data-driven LLM application.
+
+#![ScreenShot](/pipeline.png)
 
 > Loading: Import data from various sources like text files, PDFs, websites, databases, or APIs.
 
