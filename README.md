@@ -14,6 +14,18 @@ It is a framework for building context-augmented LLM Applications. It provides t
 
 ### Agents:
 
+It is an automated *reasoning* and *decision* engine. It can take a user input/query and can make internal decisions for executing that query in order to return the correct answer. Its components include 
+
+- Breaking Complex question into smaller parts
+- Choosing external tool to use + coming up with parameters for calling the tool.
+- Planning out a set of tasks.
+- Storing previously completed tasks in memory module
+
+* Use Case Applications:
+
+  > #Agentic RAG#
+
+    - 
 
 
 ## Methods Implemented
