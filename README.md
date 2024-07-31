@@ -31,7 +31,6 @@ It is an automated *reasoning* and *decision* engine. It can take a user input/q
 
 
 ## Methods Implemented
-
 ### Data-Backed LLM Applications
 
 1. Structured Data Extraction
@@ -66,22 +65,8 @@ Integrate your data with LLMs to enhance their capabilities. Crucial for chatbot
 
 > Evaluation: Assess the pipeline’s effectiveness, accuracy, and speed.
 
-### Key Stages:
 
-* Loading:
-  
-  - Import data from various sources like text files, PDFs, websites, databases, or APIs.
-
-* Indexing:
-  - Create vector embeddings and other metadata for efficient data querying.
-
-- Storing: Save indexed data and metadata to avoid re-indexing.
-
-- Querying: Utilize various strategies for efficient and relevant data retrieval.
-
-- Evaluation: Assess the pipeline’s effectiveness, accuracy, and speed.
-
-## Features:
+### LlamaIndex Framework:
 
 * Nodes and Documents:
   
@@ -109,6 +94,23 @@ Integrate your data with LLMs to enhance their capabilities. Crucial for chatbot
  
   - Query engines provide various post-processing capabilities such as *Response synthesizer, or Node Post processors*.
  
+
+### Key Stages:
+
+* Loading:
+  
+  - Import data from various sources like text files, PDFs, websites, databases, or APIs.
+
+* Indexing:
+  - Create vector embeddings and other metadata for efficient data querying.
+
+- Storing: Save indexed data and metadata to avoid re-indexing.
+
+- Querying: Utilize various strategies for efficient and relevant data retrieval.
+
+- Evaluation: Assess the pipeline’s effectiveness, accuracy, and speed.
+
+
 
 
 
