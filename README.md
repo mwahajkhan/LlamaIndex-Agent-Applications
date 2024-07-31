@@ -54,9 +54,11 @@ Integrate your data with LLMs to enhance their capabilities. Crucial for chatbot
 
 ### Key Stages:
 
-- Loading: Import data from various sources like text files, PDFs, websites, databases, or APIs.
+* Loading:
+  - Import data from various sources like text files, PDFs, websites, databases, or APIs.
 
-- Indexing: Create vector embeddings and other metadata for efficient data querying.
+* Indexing:
+  - Create vector embeddings and other metadata for efficient data querying.
 
 - Storing: Save indexed data and metadata to avoid re-indexing.
 
