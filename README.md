@@ -55,6 +55,7 @@ Integrate your data with LLMs to enhance their capabilities. Crucial for chatbot
 ### Key Stages:
 
 * Loading:
+  
   - Import data from various sources like text files, PDFs, websites, databases, or APIs.
 
 * Indexing:
@@ -66,20 +67,28 @@ Integrate your data with LLMs to enhance their capabilities. Crucial for chatbot
 
 - Evaluation: Assess the pipeline’s effectiveness, accuracy, and speed.
 
-### ## Features:
+## Features:
 
-- Nodes and Documents: Nodes represent chunks of data with metadata, while Documents are containers for data sources.
+* Nodes and Documents:
   
-- Connectors: Ingest data from various sources into Documents and Nodes. These could be APIs, PDFs, SQL and many other availaible on [llamaInde](https://docs.llamaindex.ai/en/stable/)
+  - Nodes represent chunks of data with metadata, while Documents are containers for data sources.
+  
+* Connectors:
+  
+  - Ingest data from various sources into Documents and Nodes. These could be APIs, PDFs, SQL and many other availaible on [llamaInde](https://docs.llamaindex.ai/en/stable/)
 
 
-- Data Indexes: Store vector embeddings and metadata for efficient data retrieval. It is a data structure that allows quick retrival of relevant context for a user query. At high level, indexes are built from documents, and enable LLM models to Q/A, and chat over the data.
+* Data Indexes:
 
-Indexes store data in Node objects, (which represent chunks of the original documents), and expose a retriever interface that supports additional configuration, and automation.
+  - Store vector embeddings and metadata for efficient data retrieval. It is a data structure that allows quick retrival of relevant context for a user query. At high level, indexes are built from documents, and enable LLM models to Q/A, and chat over the data.
 
-The commonly used vector indexes are VectorStoreIndex, Pinecone, FAISS etc.
+  - Indexes store data in Node objects, (which represent chunks of the original documents), and expose a retriever interface that supports additional configuration, and automation.
 
-- Embeddings: Numerical representations of data used to filter for relevance.
+  - The commonly used vector indexes are VectorStoreIndex, Pinecone, FAISS etc.
+
+* Embeddings:
+
+  - Numerical representations of data used to filter for relevance.
 
 - Retrievers and Routers: Define and manage strategies for retrieving relevant context.
 
