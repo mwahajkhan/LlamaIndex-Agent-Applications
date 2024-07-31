@@ -8,6 +8,7 @@
 ### LlamaIndex:
 
 It is a framework for building context-augmented LLM Applications. It provides tools to make a multitude of Applications from prototype to production. These tools allow:
+
     1. Ingest Data and storing in Vector Stores
     2. Implement Complex Querying Workflows combining data access with LLM prototyping
 
@@ -63,13 +64,18 @@ Integrate your data with LLMs to enhance their capabilities. Crucial for chatbot
 
 - Evaluation: Assess the pipeline’s effectiveness, accuracy, and speed.
 
-### Important Concepts
+### ## Features:
 
 - Nodes and Documents: Nodes represent chunks of data with metadata, while Documents are containers for data sources.
+  
+- Connectors: Ingest data from various sources into Documents and Nodes. These could be APIs, PDFs, SQL and many other availaible on [llamaInde](https://docs.llamaindex.ai/en/stable/)
 
-- Connectors: Ingest data from various sources into Documents and Nodes.
 
-- Indexes: Store vector embeddings and metadata for efficient data retrieval.
+- Data Indexes: Store vector embeddings and metadata for efficient data retrieval. It is a data structure that allows quick retrival of relevant context for a user query. At high level, indexes are built from documents, and enable LLM models to Q/A, and chat over the data.
+
+Indexes store data in Node objects, (which represent chunks of the original documents), and expose a retriever interface that supports additional configuration, and automation.
+
+The commonly used vector indexes are VectorStoreIndex, Pinecone, FAISS etc.
 
 - Embeddings: Numerical representations of data used to filter for relevance.
 
@@ -78,7 +84,7 @@ Integrate your data with LLMs to enhance their capabilities. Crucial for chatbot
 - Node Postprocessors and Response Synthesizers: Transform retrieved nodes and generate responses from LLMs.
 
 
-## Features:
+
 
 ## Setting Up Project Locally
 
