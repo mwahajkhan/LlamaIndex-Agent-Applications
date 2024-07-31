@@ -16,10 +16,10 @@ It is a framework for building context-augmented LLM Applications. It provides t
 
 It is an automated *reasoning* and *decision* engine. It can take a user input/query and can make internal decisions for executing that query in order to return the correct answer. Its components include 
 
-- Breaking Complex question into smaller parts
-- Choosing external tool to use + coming up with parameters for calling the tool.
+- Breaking Complex questions into smaller parts
+- Choosing an external tool to use + coming up with parameters for calling the tool.
 - Planning out a set of tasks.
-- Storing previously completed tasks in memory module
+- Storing previously completed tasks in the memory module
 
 * Use Case Applications:
 
@@ -51,11 +51,11 @@ It is an automated *reasoning* and *decision* engine. It can take a user input/q
 
 ### Retrieval-Augmented Generation (RAG)
    
-Integrate your data with LLMs to enhance their capabilities. Crucial for chatbots, agents, and any data-driven LLM application. RAG techniques combine the enterprise's data with Natural Language Processing capabilities of LLMs which include:
+Integrate your data with LLMs to enhance their capabilities. This is crucial for chatbots, agents, and any data-driven LLM application. RAG techniques combine the enterprise's data with the Natural Language Processing capabilities of LLMs which include:
 
  - Recommendation   - Decisioning  - Query Responses   - Content Generation   - Summarization
 
-- RAG architecture, combined with agents, and LLM generative model provides roobust and scalable applications across different industries.
+- RAG architecture, combined with agents, and LLM generative model provides robust and scalable applications across different industries.
 
 ![ScreenShot](/basic_rag.png)
 
@@ -69,16 +69,16 @@ Integrate your data with LLMs to enhance their capabilities. Crucial for chatbot
   
 * Connectors:
   
-  - Ingest data from various sources into Documents and Nodes. These could be APIs, PDFs, SQL and many other availaible on [llamaInde](https://docs.llamaindex.ai/en/stable/)
+  - Ingest data from various sources into Documents and Nodes. These could be APIs, PDFs, SQL, and many others availaible on [llamaInde](https://docs.llamaindex.ai/en/stable/)
 
 
 * Data Indexes:
 
-  - Store vector embeddings and metadata for efficient data retrieval. It is a data structure that allows quick retrival of relevant context for a user query. At high level, indexes are built from documents, and enable LLM models to Q/A, and chat over the data.
+  - Store vector embeddings and metadata for efficient data retrieval. It is a data structure that allows quick retrieval of relevant context for a user query. At a high level, indexes are built from documents and enable LLM models to Q/A, and chat over the data.
 
   - Indexes store data in Node objects, (which represent chunks of the original documents), and expose a retriever interface that supports additional configuration, and automation.
 
-  - The commonly used vector indexes are VectorStoreIndex, Pinecone, FAISS etc.
+  - The commonly used vector indexes are VectorStoreIndex, Pinecone, FAISS, etc.
   -  For efficient semantic operations, the documents are broken into smaller chunks, or node objects. And we also store each document along with metadata of the document. For that the LlamaIndex offers *Spliiters* to chunk the documents.
 
 * Query Engines:
@@ -92,21 +92,18 @@ Integrate your data with LLMs to enhance their capabilities. Crucial for chatbot
 
 ### Key Stages:
 
-* Loading:
-  
-  - Import data from various sources like text files, PDFs, websites, databases, or APIs.
+* **Prompts:**
 
-* Indexing:
-  - Create vector embeddings and other metadata for efficient data querying.
+  - In programmatic interactions with LLMs the prompts have to be specialized and include context. The prompt has the following components:
 
-- Storing: Save indexed data and metadata to avoid re-indexing.
+    1. InstrUctions: Tell the model what role it is playing, the situation, response approach, how to use external information if provided. What to do with the query and how to construct the output.
+    2. External Information: Context additional information for the model can be manually inserted into prompts, retrived via vector database, or pulled via other means.
+    3. User Input/Query: A query input or question to the system by the user.
+    4.  Output Indicator: Determines the format of the to-be-generated response. The prompt can mention a meaningful textual structure or a technical structure like JSON, XML, or HTML etc. In RAG applications the prompts have to be generic so the variables passed in the prompt have to be dynamic so they can change based on the question provided by the user.
+   
+* **Semantic Similarity Evaluator**
 
-- Querying: Utilize various strategies for efficient and relevant data retrieval.
-
-- Evaluation: Assess the pipeline’s effectiveness, accuracy, and speed.
-
-
-
+To check whether the two pieces of text are similar to each other, especially in RAG application to retrieve relevant and concise context for augmented/final prompt to be sent to the LLM. To perform, semantic similarity, the pieces of text must be embedded, then the similarity search operations find the distance between language embeddings in the n-dimensional space.  
 
 
 
