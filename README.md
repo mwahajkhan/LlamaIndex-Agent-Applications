@@ -1,5 +1,7 @@
 # LlamaIndex-Agent-Applications
 
+![ScreenShot](/pipeline.png)
+
 ## Description:
 
 ## Features:
