@@ -21,7 +21,9 @@ It is an automated *reasoning* and *decision* engine. It can take a user input/q
 - Planning out a set of tasks.
 - Storing previously completed tasks in the memory module
 
-* Use Case Applications:
+![ScreenShot](/images/agent_reasoning_loop.png)
+
+* Agents use Case Applications:
 
    - **Agentic RAG**
    - **SQL Agent**
@@ -91,7 +93,7 @@ Integrate your data with LLMs to enhance their capabilities. This is crucial for
  
   - Query engines provide various post-processing capabilities such as *Response synthesizer, or Node Post processors*.
  
- 
+![ScreenShot](/images/query_engine.png) 
 
 ### Key Stages:
 
