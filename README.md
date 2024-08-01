@@ -107,7 +107,15 @@ To check whether the two pieces of text are similar to each other, especially in
 
 * **Language Embeddings:**
 
-Embeddings are vectors created as numerical representations of non-numerical data objects like Natural Language, images, sounds, etc. In the case of Natural Language Processing embedding vectors capture the **semantic and syntactic** senses. The embedding models involve complex machine learning techniques including sophisticated neural networks. Text embeddings capture the semantic meanings of words, and their relationships within a language, as they encode semantic simalarity between words.
+Embeddings are vectors created as numerical representations of non-numerical data objects like Natural Language, images, sounds, etc. In the case of Natural Language Processing embedding vectors capture the **semantic and syntactic** senses. The embedding models involve complex machine learning techniques including sophisticated neural networks. Text embeddings capture the semantic meanings of words, and their relationships within a language, as they encode semantic simalarity between words. Some common text embedding models are:
+
+-> TF-IDF (Term frequency -Inverse document frequency    -> Word-2-Vec    -> BERT (Bidirectional Encode Representations from Transformers)
+
+The simalarity between two data points can be measured via:
+
+1. Euclidean Distance
+    
+2. Cosine Distance
 
 
 
