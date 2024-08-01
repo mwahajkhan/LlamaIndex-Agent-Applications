@@ -57,7 +57,7 @@ Integrate your data with LLMs to enhance their capabilities. This is crucial for
 
 - RAG architecture, combined with agents, and LLM generative model provides robust and scalable applications across different industries.
 
-![ScreenShot](/basic_rag.png)
+![ScreenShot](/images/basic_rag.png)
 
 
 
@@ -80,6 +80,8 @@ Integrate your data with LLMs to enhance their capabilities. This is crucial for
 
   - The commonly used vector indexes are VectorStoreIndex, Pinecone, FAISS, etc.
   -  For efficient semantic operations, the documents are broken into smaller chunks, or node objects. And we also store each document along with metadata of the document. For that the LlamaIndex offers *Spliiters* to chunk the documents.
+
+![ScreenShot](/images/vector_store_query.png)
 
 * Query Engines:
 
