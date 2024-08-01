@@ -105,6 +105,10 @@ Integrate your data with LLMs to enhance their capabilities. This is crucial for
 
 To check whether the two pieces of text are similar to each other, especially in RAG application to retrieve relevant and concise context for augmented/final prompt to be sent to the LLM. To perform, semantic similarity, the pieces of text must be embedded, then the similarity search operations find the distance between language embeddings in the n-dimensional space.  
 
+* **Language Embeddings:**
+
+Embeddings are vectors created as numerical representations of non-numerical data objects like Natural Language, images, sounds, etc. In the case of Natural Language Processing embedding vectors capture the **semantic and syntactic** senses. The embedding models involve complex machine learning techniques including sophisticated neural networks. Text embeddings capture the semantic meanings of words, and their relationships within a language, as they encode semantic simalarity between words.
+
 
 
 ## Setting Up Project Locally
