@@ -89,6 +89,7 @@ Integrate your data with LLMs to enhance their capabilities. This is crucial for
  
   - Query engines provide various post-processing capabilities such as *Response synthesizer, or Node Post processors*.
  
+ 
 
 ### Key Stages:
 
@@ -117,6 +118,10 @@ The simalarity between two data points can be measured via:
     
 2. Cosine Distance
 
+
+* **Vector Databases:**
+
+These are specialized databases that can store and retrieve Embedding Vectors, as high-dimensional points. They have specialized capabilities for efficient and smart lookup of nearest neighbors in the N-dimensional space. They offer comprehensive data management capabilities, allowing for meta data storage, filtering, and dynamic querying based on associated meta-data. Vector databases are scalable and can handle large volumes of vector data, ensuring high performance as data grows.
 
 
 ## Setting Up Project Locally
