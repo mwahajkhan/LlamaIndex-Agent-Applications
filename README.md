@@ -127,6 +127,7 @@ The simalarity between two data points can be measured via:
 
 These are specialized databases that can store and retrieve Embedding Vectors, as high-dimensional points. They have specialized capabilities for efficient and smart lookup of nearest neighbors in the N-dimensional space. They offer comprehensive data management capabilities, allowing for meta data storage, filtering, and dynamic querying based on associated meta-data. Vector databases are scalable and can handle large volumes of vector data, ensuring high performance as data grows.
 
+![ScreenShot](/images/Vector_Databases.png)
 
 ## Setting Up Project Locally
 
