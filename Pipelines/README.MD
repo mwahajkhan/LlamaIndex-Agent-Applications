@@ -26,6 +26,8 @@ engine = create_engine('sqlite:///example.db')
 
 - **Ease of Use: It makes it easier to build LLM workflows over the data.
 
+![image](advanced-RAG-pipeline.png)
+
 ### Example Usage:
 ```python
 from llama_index.core.query_pipeline import QueryPipeline
