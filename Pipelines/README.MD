@@ -16,3 +16,29 @@ from llama_index.llms.openai import OpenAI
 # SQLAlchemy provides an object-relational mapper
 # Create an engine and interact with the database
 engine = create_engine('sqlite:///example.db')
+
+### Llama Index Query Pipelines
+- **Llama Index Query Pipelines is a new declarative API within LlamaIndex that allows you to concisely orchestrate simple-to-advanced query workflows within RAG applications.
+
+###Features of Llama Index Query Pipelines
+- **Query Pipeline Abstraction: At the core of this is the Query Pipeline abstraction. It can take in many LlamaIndex Modules (LLMs, prompts, query engines, retrievers, etc.) and create a computational graph over these modules.
+
+- **Ease of Use: It makes it easier to build LLM workflows over the data.
+
+### Example Usage:
+```python
+from llama_index.core.query_pipeline import QueryPipeline
+from llama_index.llms.openai import OpenAI
+
+# Define your query pipeline
+pipeline = QueryPipeline.from_defaults(
+    llm=OpenAI(model="text-davinci-002"),
+    retriever=my_retriever,
+    prompt_template=my_prompt_template,
+    query_engine=my_query_engine
+)
+
+# Use the pipeline to process a query
+response = pipeline.query("What is the capital of France?")
+print(response)
+
