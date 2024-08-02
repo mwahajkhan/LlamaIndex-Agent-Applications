@@ -14,7 +14,7 @@ It is a framework for building context-augmented LLM Applications. It provides t
 
 ### Agents:
 
-It is an automated *reasoning* and *decision* engine. It can take a user input/query and can make internal decisions for executing that query in order to return the correct answer. Its components include 
+It is an automated *reasoning* and *decision* engine. It can take user input/query and can make internal decisions to execute that query in order to return the correct answer. Its components include 
 
 - Breaking Complex questions into smaller parts
 - Choosing an external tool to use + coming up with parameters for calling the tool.
@@ -81,13 +81,13 @@ Integrate your data with LLMs to enhance their capabilities. This is crucial for
   - Indexes store data in Node objects, (which represent chunks of the original documents), and expose a retriever interface that supports additional configuration, and automation.
 
   - The commonly used vector indexes are VectorStoreIndex, Pinecone, FAISS, etc.
-  -  For efficient semantic operations, the documents are broken into smaller chunks, or node objects. And we also store each document along with metadata of the document. For that the LlamaIndex offers *Spliiters* to chunk the documents.
+  -  The documents are broken into smaller chunks or node objects for efficient semantic operations. And we also store each document along with metadata of the document. For that the LlamaIndex offers *Spliiters* to chunk the documents.
 
 ![ScreenShot](/images/vector_store_query.png)
 
 * Query Engines:
 
-  - Its is a generic interface that allows us to ask question over the data. It takes Natural-Language query and returns a rich response built on one or many indexes via retrievers.
+  - Its is a generic interface that allows us to ask question over the data. It takes a Natural-Language query and returns a rich response built on one or many indexes via retrievers.
  
   - We combined multiple query engines to achieve more advanced capability.
  
@@ -155,11 +155,13 @@ These are specialized databases that can store and retrieve Embedding Vectors, a
 
 #Installing specific dependencies for dataframe-pipeline.ipynb
 
-    !pip install llama-index llama-index-experimental
+    pipenv install llama-index llama-index-experimental
 
 #Installing streamlit library for chatbot UI in code-checker.py
 
-    !pip install streamlit
+    pipenv install streamlit
+
+- In terminal Run: streamlit run code-check.py
 
 # Setting up environment varaiable containng API private keys
 
