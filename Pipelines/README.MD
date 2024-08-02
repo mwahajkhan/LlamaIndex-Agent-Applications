@@ -26,7 +26,7 @@ engine = create_engine('sqlite:///example.db')
 
 - **Ease of Use: It makes it easier to build LLM workflows over the data.
 
-![image](advanced-RAG-pipeline.png)
+![image](/images/advanced-RAG-pipeline.png)
 
 ### Example Usage:
 ```python
