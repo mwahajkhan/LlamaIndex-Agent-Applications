@@ -21,7 +21,7 @@ engine = create_engine('sqlite:///example.db')
 ### Llama Index Query Pipelines
 - **Llama Index Query Pipelines is a new declarative API within LlamaIndex that allows you to concisely orchestrate simple-to-advanced query workflows within RAG applications.
 
-###Features of Llama Index Query Pipelines
+### Features of Llama Index Query Pipelines
 - **Query Pipeline Abstraction: At the core of this is the Query Pipeline abstraction. It can take in many LlamaIndex Modules (LLMs, prompts, query engines, retrievers, etc.) and create a computational graph over these modules.
 
 - **Ease of Use: It makes it easier to build LLM workflows over the data.
@@ -42,4 +42,4 @@ pipeline = QueryPipeline.from_defaults(
 # Use the pipeline to process a query
 response = pipeline.query("What is the capital of France?")
 print(response)
-
+```
